@@ -1,0 +1,19 @@
+<section id="gallery" class="gallery-section">
+
+  <h2 class="section-title">Project Gallery</h2>
+
+  <div class="gallery-grid">
+    <img src="/g1.jpg" (click)="openImage('/g1.jpg')">
+    <img src="/g2.jpg" (click)="openImage('/g2.jpg')">
+    <img src="/g3.jpg" (click)="openImage('/g3.jpg')">
+    <img src="/g4.jpg" (click)="openImage('/g4.jpg')">
+    <img src="/g5.jpg" (click)="openImage('/g5.jpg')">
+    <img src="/g6.jpg" (click)="openImage('/g6.jpg')">
+  </div>
+
+  <!-- Popup -->
+  <div class="image-popup" *ngIf="selectedImage" (click)="closeImage()">
+    <img [src]="selectedImage">
+  </div>
+
+</section>

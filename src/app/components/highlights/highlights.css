@@ -1,0 +1,18 @@
+.highlights-section {
+  background: #ffffff;
+  padding: 40px 10%;
+  border-bottom: 1px solid #eee;
+}
+
+.highlights-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.highlight {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}

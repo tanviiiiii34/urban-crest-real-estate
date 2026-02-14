@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

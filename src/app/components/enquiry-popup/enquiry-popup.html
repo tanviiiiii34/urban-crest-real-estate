@@ -1,0 +1,45 @@
+<div class="popup-overlay" *ngIf="isOpen">
+
+  <div class="popup-card" (click)="$event.stopPropagation()">
+
+    <button class="close-btn" (click)="close()">×</button>
+
+    <h2>Enquire Now</h2>
+    <p class="subtitle">
+      Fill in your details and our team will contact you shortly.
+    </p>
+
+    <form [formGroup]="enquiryForm" (ngSubmit)="submitForm()">
+
+      <div class="form-row">
+        <input
+          type="text"
+          placeholder="Your Name"
+          formControlName="name">
+      </div>
+
+      <div class="form-row">
+        <input
+          type="text"
+          placeholder="Phone Number"
+          formControlName="phone">
+      </div>
+
+      <div class="form-row">
+        <input
+          type="email"
+          placeholder="Email Address"
+          formControlName="email">
+      </div>
+
+      <button
+        type="submit"
+        class="submit-btn"
+        [disabled]="enquiryForm.invalid">
+        Submit Enquiry
+      </button>
+
+    </form>
+
+  </div>
+</div>

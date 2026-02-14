@@ -1,0 +1,106 @@
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Popup Card */
+.popup-card {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 40px 35px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+  animation: popupFade 0.35s ease;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Title */
+.popup-card h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+.form-row {
+  margin-bottom: 16px;
+}
+
+.form-row input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: #c28a4b;
+  box-shadow: 0 0 0 2px rgba(194,138,75,0.15);
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: #c28a4b;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #a8743c;
+  transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+  background: #cfcfcf;
+  cursor: not-allowed;
+}

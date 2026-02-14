@@ -1,0 +1,40 @@
+.floor-plans {
+  padding: 80px 8%;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.plan-card h3 {
+  padding: 15px;
+  font-weight: 500;
+}
