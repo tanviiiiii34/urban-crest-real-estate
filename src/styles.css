@@ -22,3 +22,22 @@ html {
     transform: translateY(0);
   }
 }
+section {
+  padding: 100px 8%;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}

@@ -6,6 +6,7 @@ import { AboutComponent } from './components/about/about';
 import { AmenitiesComponent } from './components/amenities/amenities';
 import { FloorPlansComponent } from './components/floor-plans/floor-plans';
 import { LocationComponent } from './components/location/location';
+import { VideoSectionComponent } from './components/video-section/video-section';
 import { GalleryComponent } from './components/gallery/gallery';
 import { ContactComponent } from './components/contact/contact';
 import { FooterComponent } from './components/footer/footer';
@@ -22,6 +23,7 @@ import { EnquiryPopupComponent } from './components/enquiry-popup/enquiry-popup'
     AmenitiesComponent,
     FloorPlansComponent,
     LocationComponent,
+    VideoSectionComponent,
     GalleryComponent,
     ContactComponent,
     FooterComponent,

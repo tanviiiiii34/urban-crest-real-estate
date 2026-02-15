@@ -3,6 +3,7 @@
   background: #f7f7f7;
 }
 
+
 .location-wrapper {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -11,10 +12,10 @@
 }
 
 
-
 .location-left h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .location-left p {
@@ -22,7 +23,6 @@
   line-height: 1.7;
   font-size: 16px;
 }
-
 
 
 .location-right {
@@ -47,8 +47,9 @@
   box-shadow: 0 15px 30px rgba(0,0,0,0.12);
 }
 
+
 .icon {
-  font-size: 20px;
+  font-size: 18px;
   background: #c28a4b;
   color: white;
   width: 40px;
@@ -60,9 +61,21 @@
 }
 
 
+.map-container {
+  margin-top: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
 
 @media (max-width: 900px) {
   .location-wrapper {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .location-left h2 {
+    font-size: 28px;
   }
 }
